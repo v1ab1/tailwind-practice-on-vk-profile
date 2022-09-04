@@ -266,8 +266,8 @@
                             </div>
                         </button>
                         <div x-show="open" class="absolute top-full right-0 pt-1">
-                            <div class="relative">
-                                <div class="bg-white my-2 flex -mr-4 flex-col whitespace-nowrap text-black text-left rounded-md shadow-lg border border-gray-300">
+                            <div class="relative  -mr-4">
+                                <div class="bg-white my-2 flexflex-col whitespace-nowrap text-black text-left rounded-md shadow-lg border border-gray-300">
                                     <div class="py-1.5 px-4 hover:bg-gray-100">
                                         <a href="">Legal information</a>
                                     </div>
@@ -294,54 +294,59 @@
                 </li>
             </ul>
         </div>
-        <div class="bg-white w-60 mr-4 flex-shrink-0 rounded-2xl">
-            <div class="px-4 pt-4">
-                <img src="./big-avatar.jpeg" alt="">
+        <div class="w-60 mr-4 flex-shrink-0">
+            <div class="bg-white rounded-2xl">
+                <div class="px-4 pt-4">
+                    <img src="./big-avatar.jpeg" alt="">
+                </div>
+                <div class="flex text-center justify-center bg-blue-100 mt-4 p-1 rounded-lg text-gray-500 m-4 hover:bg-blue-200">
+                    Edit
+                </div>
+                <div class="text-gray-400 pb-2 text-sm">
+                    <div class="flex py-1.5 content-center hover:bg-gray-100 group px-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>                          
+                        </div>
+                        <div class="mt-0.5 group-hover:text-gray-500">
+                            Memories
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 hover:bg-gray-100 group px-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                            </svg>                          
+                        </div>
+                        <div class="mt-0.5 group-hover:text-gray-500">
+                            My questions
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 hover:bg-gray-100 group px-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                            </svg>                          
+                        </div>
+                        <div class="mt-0.5 group-hover:text-gray-500">
+                            Story archive
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 group hover:bg-gray-100 px-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                            </svg>                          
+                        </div>
+                        <div class="mt-0.5 group-hover:text-gray-500">
+                            Money transfers
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex text-center justify-center bg-blue-100 mt-4 p-1 rounded-lg text-gray-500 m-4 hover:bg-blue-200">
-                Edit
-            </div>
-            <div class="text-gray-400 pb-2 text-sm">
-                <div class="flex py-1.5 content-center hover:bg-gray-100 group px-4">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-0.5 group-hover:text-gray-500">
-                        Memories
-                    </div>
-                </div>
-                <div class="flex py-1.5 hover:bg-gray-100 group px-4">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-0.5 group-hover:text-gray-500">
-                        My questions
-                    </div>
-                </div>
-                <div class="flex py-1.5 hover:bg-gray-100 group px-4">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-0.5 group-hover:text-gray-500">
-                        Story archive
-                    </div>
-                </div>
-                <div class="flex py-1.5 group hover:bg-gray-100 px-4">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 group-hover:text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-0.5 group-hover:text-gray-500">
-                        Money transfers
-                    </div>
-                </div>
+            <div>
+                
             </div>
         </div>
         <div class="bg-white p-4 w-full">
