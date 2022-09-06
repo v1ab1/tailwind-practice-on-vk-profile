@@ -848,159 +848,161 @@
             </div>
         </div>
         <div class="w-full mb-4">
-            <div x-data="{ open: false }" class="py-4 rounded-2xl bg-white px-5">
-                <div class="flex justify-between">
-                    <div class="flex">
-                        <div class="text-xl ">
-                            Vlad Aristov
+            <div x-data="{ open: false }" class="pt-4 rounded-2xl bg-white">
+                <div x-data="{ open: false }" class="px-5">
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <div class="text-xl ">
+                                Vlad Aristov
+                            </div>
+                            <div class="flex self-center pl-2">
+                                <img class="w-5 h-5" src="./media/name-smile.png" alt="">
+                            </div>
                         </div>
-                        <div class="flex self-center pl-2">
-                            <img class="w-5 h-5" src="./media/name-smile.png" alt="">
-                        </div>
-                    </div>
-                    <div class="text-xs text-gray-400 self-center">
-                        online
-                    </div>
-                </div>
-                <div style="border-bottom: 1px solid #e7e9eb;">
-                    <form action="">
-                        <input type="text" value="/" class="w-full outline-none text-black text-sm hover:bg-gray-100">
-                    </form>
-                </div>
-                <div class="grid grid-cols-3 gap-2 mb-2 mt-3">
-                    <div class="text-gray-400 text-sm">
-                        Institution:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">УрФУ им. первого Президента России Б. Н. Ельцина '25</a>
-                    </div>
-                    <div class="text-gray-400 text-sm">
-                        Website:
-                    </div>
-                    <div class="col-span-2 text-sm">
-                        <a class="hover:underline text-blue-500" href="https://github.com/v1ab1">
-                            https://github.com/v1ab1
-                        </a>
-                        (я только начинаю, не бейте)
-                    </div>
-                </div>
-                <button x-on:click=" open = ! open" class="grid grid-cols-3 gap-2 mb-2 mt-3 w-full text-left hover:bg-gray-100 rounded-lg">
-                    <div>
-                        
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500 py-2">
-                        <div x-show="open === false">
-                            Show full information
-                        </div>
-                        <div x-show="open === true" v-cloack>
-                            Hide full information
+                        <div class="text-xs text-gray-400 self-center">
+                            online
                         </div>
                     </div>
-                </button>
-                <div x-show="open" x-cloack class="group">
-                    <div class="relative flex items-center mb-2 text-sm">
-                        <div class="pr-2">
-                            Education
-                        </div>
-                        <div class="flex-1">
-                            <div class="h-px bg-gray-200"></div>
-                        </div>
-                        <div class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 pl-2 transition bg-white text-gray-400 hover:underline">
-                            <a href="https://vk.com/edit?act=education">Edit</a>
-                        </div>
+                    <div style="border-bottom: 1px solid #e7e9eb;">
+                        <form action="">
+                            <input type="text" value="/" class="w-full outline-none text-black text-sm hover:bg-gray-100">
+                        </form>
                     </div>
-                </div>
-                <div x-show="open" x-cloack class="grid grid-cols-3 gap-2 mb-2">
-                    <div class="text-gray-400 text-sm">
-                        College or university:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">УрФУ им. первого Президента России Б. Н. Ельцина '25</a>
-                    </div>
-                    <div class="text-gray-400 text-sm">
-                        Faculty:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bfaculty%5D=20422&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Институт радиоэлектроники и информационных технологий–РтФ</a>
-                    </div>
-                    <div class="text-gray-400 text-sm">
-                        Study program:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bchair%5D=2101128&c%5Bfaculty%5D=20422&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Информационная безопасность</a>
-                    </div>
-                    <div class="text-gray-400 text-sm">
-                        Mode of study:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bedu_form%5D=1&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Full time</a>
-                    </div>
-                    <div class="text-gray-400 text-sm">
-                        Status:
-                    </div>
-                    <div class="col-span-2 text-sm text-blue-500">
-                        <a class="hover:underline" href="https://vk.com/search?c%5Bedu_status%5D=3&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Student (Bachelor's)</a>
-                    </div>
-                </div>
-                <div x-show="open" x-cloack class="group mt-4">
-                    <div class="relative flex items-center mb-2 text-sm">
-                        <div class="pr-2">
-                            Personal information:
-                        </div>
-                        <div class="flex-1">
-                            <div class="h-px bg-gray-200"></div>
-                        </div>
-                        <div class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 pl-2 transition bg-white text-gray-400 hover:underline">
-                            <a href="https://vk.com/edit?act=interests">Edit</a>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-2 mb-2">
+                    <div class="grid grid-cols-3 gap-2 mb-2 mt-3">
                         <div class="text-gray-400 text-sm">
-                            Favorite quotes:
+                            Institution:
+                        </div>
+                        <div class="col-span-2 text-sm text-blue-500">
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">УрФУ им. первого Президента России Б. Н. Ельцина '25</a>
+                        </div>
+                        <div class="text-gray-400 text-sm">
+                            Website:
                         </div>
                         <div class="col-span-2 text-sm">
-                            "Йож, напушился" - ...
-                        </div>
-                        <div class="text-gray-400 text-sm">
-                            Groups:
-                        </div>
-                        <div class="col-span-2 text-sm text-blue-500">
-                            <a class="hover:underline" href="https://vk.com/sw_hvm">Special Warfare CS 1.6 Next21.ru</a>,
-                            <a class="hover:underline" href="https://vk.com/club165635497">#14 Видеокурс</a>,
-                            <a class="hover:underline" href="https://vk.com/cisapexlegends">Apex Legends Journal СНГ</a>,
-                            <a class="hover:underline" href="https://vk.com/88chsxe">88ch.</a>,
-                            <a class="hover:underline" href="https://vk.com/rightvol">Правая Воля</a>,
-                            <a class="hover:underline" href="https://vk.com/kinocityalp">Трк сити-центр г алапаевск</a>,
-                            <a class="hover:underline" href="https://vk.com/comicsartboi"> Внутреннее Умиротворение Shadmana</a>,
-                            <a class="hover:underline" href="https://vk.com/sushimark777">СУШИ марк СУШИмарк</a>,
-                            <a class="hover:underline" href="https://vk.com/pizza_plus1">Кафе ПИЦЦЕРИЯ плюс</a>,
-                            <a class="hover:underline" href="https://vk.com/2style">VK Styles Темы вк живые обои</a>,
-                            <a class="hover:underline" href="https://vk.com/mediappt">MED Медиацентр ППТ</a>,
-                            <a class="hover:underline" href="https://vk.com/zombierus_faces">Зомбирус на каждый день</a>,
-                            <a class="hover:underline" href="https://vk.com/margoshenochka">Интерес у нас один Тодди любим им горим</a>,
-                            <a class="hover:underline" href="https://vk.com/architectmovie">larchitectl</a>,
-                            <a class="hover:underline" href="https://vk.com/picture.thread">picture thread</a>
+                            <a class="hover:underline text-blue-500" href="https://github.com/v1ab1">
+                                https://github.com/v1ab1
+                            </a>
+                            (я только начинаю, не бейте)
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-2 mb-2 mt-3 hover:bg-gray-100 rounded-lg">
-                        <div class="text-gray-400 text-sm">
+                    <button x-on:click=" open = ! open" class="grid grid-cols-3 gap-2 mb-2 mt-3 w-full text-left hover:bg-gray-100 rounded-lg">
+                        <div>
+                            
                         </div>
                         <div class="col-span-2 text-sm text-blue-500 py-2">
-                            <button>Hide full information</button>
+                            <div x-show="open === false">
+                                Show full information
+                            </div>
+                            <div x-show="open === true" v-cloack>
+                                Hide full information
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show="open" x-cloack class="group">
+                        <div class="relative flex items-center mb-2 text-sm">
+                            <div class="pr-2">
+                                Education
+                            </div>
+                            <div class="flex-1">
+                                <div class="h-px bg-gray-200"></div>
+                            </div>
+                            <div class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 pl-2 transition bg-white text-gray-400 hover:underline">
+                                <a href="https://vk.com/edit?act=education">Edit</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-2 mb-2">
+                    <div x-show="open" x-cloack class="grid grid-cols-3 gap-2 mb-2">
                         <div class="text-gray-400 text-sm">
+                            College or university:
                         </div>
                         <div class="col-span-2 text-sm text-blue-500">
-                            <a class="hover:underline" href="https://vk.com/playstation_hack">PlayStation Hack</a>,
-                            <a class="hover:underline" href="https://vk.com/club163585607">#12 Видеокурс</a>,
-                            <a class="hover:underline" href="https://vk.com/club165635641">#15 Видеокурс</a>,
-                            <a class="hover:underline" href="https://vk.com/fullvls">FULL PLEASE</a>
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">УрФУ им. первого Президента России Б. Н. Ельцина '25</a>
+                        </div>
+                        <div class="text-gray-400 text-sm">
+                            Faculty:
+                        </div>
+                        <div class="col-span-2 text-sm text-blue-500">
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bfaculty%5D=20422&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Институт радиоэлектроники и информационных технологий–РтФ</a>
+                        </div>
+                        <div class="text-gray-400 text-sm">
+                            Study program:
+                        </div>
+                        <div class="col-span-2 text-sm text-blue-500">
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bchair%5D=2101128&c%5Bfaculty%5D=20422&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Информационная безопасность</a>
+                        </div>
+                        <div class="text-gray-400 text-sm">
+                            Mode of study:
+                        </div>
+                        <div class="col-span-2 text-sm text-blue-500">
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bedu_form%5D=1&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Full time</a>
+                        </div>
+                        <div class="text-gray-400 text-sm">
+                            Status:
+                        </div>
+                        <div class="col-span-2 text-sm text-blue-500">
+                            <a class="hover:underline" href="https://vk.com/search?c%5Bedu_status%5D=3&c%5Bname%5D=0&c%5Bsection%5D=people&c%5Buni_city%5D=49&c%5Buni_country%5D=1&c%5Buniversity%5D=477">Student (Bachelor's)</a>
+                        </div>
+                    </div>
+                    <div x-show="open" x-cloack class="group mt-4">
+                        <div class="relative flex items-center mb-2 text-sm">
+                            <div class="pr-2">
+                                Personal information:
+                            </div>
+                            <div class="flex-1">
+                                <div class="h-px bg-gray-200"></div>
+                            </div>
+                            <div class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 pl-2 transition bg-white text-gray-400 hover:underline">
+                                <a href="https://vk.com/edit?act=interests">Edit</a>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-2">
+                            <div class="text-gray-400 text-sm">
+                                Favorite quotes:
+                            </div>
+                            <div class="col-span-2 text-sm">
+                                "Йож, напушился" - ...
+                            </div>
+                            <div class="text-gray-400 text-sm">
+                                Groups:
+                            </div>
+                            <div class="col-span-2 text-sm text-blue-500">
+                                <a class="hover:underline" href="https://vk.com/sw_hvm">Special Warfare CS 1.6 Next21.ru</a>,
+                                <a class="hover:underline" href="https://vk.com/club165635497">#14 Видеокурс</a>,
+                                <a class="hover:underline" href="https://vk.com/cisapexlegends">Apex Legends Journal СНГ</a>,
+                                <a class="hover:underline" href="https://vk.com/88chsxe">88ch.</a>,
+                                <a class="hover:underline" href="https://vk.com/rightvol">Правая Воля</a>,
+                                <a class="hover:underline" href="https://vk.com/kinocityalp">Трк сити-центр г алапаевск</a>,
+                                <a class="hover:underline" href="https://vk.com/comicsartboi"> Внутреннее Умиротворение Shadmana</a>,
+                                <a class="hover:underline" href="https://vk.com/sushimark777">СУШИ марк СУШИмарк</a>,
+                                <a class="hover:underline" href="https://vk.com/pizza_plus1">Кафе ПИЦЦЕРИЯ плюс</a>,
+                                <a class="hover:underline" href="https://vk.com/2style">VK Styles Темы вк живые обои</a>,
+                                <a class="hover:underline" href="https://vk.com/mediappt">MED Медиацентр ППТ</a>,
+                                <a class="hover:underline" href="https://vk.com/zombierus_faces">Зомбирус на каждый день</a>,
+                                <a class="hover:underline" href="https://vk.com/margoshenochka">Интерес у нас один Тодди любим им горим</a>,
+                                <a class="hover:underline" href="https://vk.com/architectmovie">larchitectl</a>,
+                                <a class="hover:underline" href="https://vk.com/picture.thread">picture thread</a>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-2 mt-3 hover:bg-gray-100 rounded-lg">
+                            <div class="text-gray-400 text-sm">
+                            </div>
+                            <div class="col-span-2 text-sm text-blue-500 py-2">
+                                <button>Hide full information</button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-2">
+                            <div class="text-gray-400 text-sm">
+                            </div>
+                            <div class="col-span-2 text-sm text-blue-500">
+                                <a class="hover:underline" href="https://vk.com/playstation_hack">PlayStation Hack</a>,
+                                <a class="hover:underline" href="https://vk.com/club163585607">#12 Видеокурс</a>,
+                                <a class="hover:underline" href="https://vk.com/club165635641">#15 Видеокурс</a>,
+                                <a class="hover:underline" href="https://vk.com/fullvls">FULL PLEASE</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div x-show="open" x-cloack class="mt-4" style="border-top: 1px solid #e7e9eb;">
+                <div class="mt-4" style="border-top: 1px solid #e7e9eb;">
                     <div class="flex px-20 py-3 justify-between">
                         <div class="flex flex-col">
                             <div class="text-xl text-blue-700 text-center">
