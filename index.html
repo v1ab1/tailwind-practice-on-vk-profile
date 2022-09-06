@@ -848,7 +848,7 @@
             </div>
         </div>
         <div class="w-full mb-4">
-            <div x-data="{ open: false }" class="pt-4 rounded-2xl bg-white">
+            <div class="pt-4 rounded-2xl bg-white">
                 <div x-data="{ open: false }" class="px-5">
                     <div class="flex justify-between">
                         <div class="flex">
@@ -983,75 +983,94 @@
                                 <a class="hover:underline" href="https://vk.com/picture.thread">picture thread</a>
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-2 mb-2 mt-3 hover:bg-gray-100 rounded-lg">
-                            <div class="text-gray-400 text-sm">
-                            </div>
-                            <div class="col-span-2 text-sm text-blue-500 py-2">
-                                <button>Hide full information</button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-2 mb-2">
-                            <div class="text-gray-400 text-sm">
-                            </div>
-                            <div class="col-span-2 text-sm text-blue-500">
-                                <a class="hover:underline" href="https://vk.com/playstation_hack">PlayStation Hack</a>,
-                                <a class="hover:underline" href="https://vk.com/club163585607">#12 Видеокурс</a>,
-                                <a class="hover:underline" href="https://vk.com/club165635641">#15 Видеокурс</a>,
-                                <a class="hover:underline" href="https://vk.com/fullvls">FULL PLEASE</a>
+                        <div x-data="{ open: false }">
+                            <button x-on:click=" open = ! open " class="grid grid-cols-3 gap-2 mb-2 mt-3 w-full text-left hover:bg-gray-100 rounded-lg">
+                                <div class="text-gray-400 text-sm">
+                                </div>
+                                <div class="col-span-2 text-sm text-blue-500 py-2">
+                                    <div x-show="open === false">
+                                        Show full list
+                                    </div>
+                                    <div x-show="open === true" v-cloack>
+                                        Hide full list
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show="open" x-cloack class="grid grid-cols-3 gap-2 mb-2">
+                                <div class="text-gray-400 text-sm">
+                                </div>
+                                <div class="col-span-2 text-sm text-blue-500">
+                                    <a class="hover:underline" href="https://vk.com/playstation_hack">PlayStation Hack</a>,
+                                    <a class="hover:underline" href="https://vk.com/club163585607">#12 Видеокурс</a>,
+                                    <a class="hover:underline" href="https://vk.com/club165635641">#15 Видеокурс</a>,
+                                    <a class="hover:underline" href="https://vk.com/fullvls">FULL PLEASE</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4" style="border-top: 1px solid #e7e9eb;">
                     <div class="flex px-20 py-3 justify-between">
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                113
+                        <a href="https://vk.com/friends?id=594770123&section=all">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    113
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    friends
+                                </div>
                             </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                friends
+                        </a>
+                        <a href="">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    5
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    followers
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                5
+                        </a>
+                        <a href="https://vk.com/v1ab1?z=albums594770123">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    7
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    photos
+                                </div>
                             </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                followers
+                        </a>
+                        <a href="https://vk.com/v1ab1?z=photo_tag594770123">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    3
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    tags
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                7
+                        </a>
+                        <a href="https://vk.com/video/@v1ab1">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    256
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    videos
+                                </div>
                             </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                photos
+                        </a>
+                        <a href="https://vk.com/audios594770123">
+                            <div class="flex flex-col group">
+                                <div class="text-xl text-blue-700 text-center">
+                                    2,797
+                                </div>
+                                <div class="text-gray-500 text-sm text-center group-hover:text-blue-900">
+                                    tracks
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                3
-                            </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                tags
-                            </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                256
-                            </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                videos
-                            </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="text-xl text-blue-700 text-center">
-                                2,797
-                            </div>
-                            <div class="text-gray-500 text-sm text-center">
-                                tracks
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
